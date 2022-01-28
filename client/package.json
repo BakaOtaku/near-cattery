@@ -1,0 +1,15 @@
+{
+  "name": "meta-frontend",
+  "version": "1.0.0",
+  "description": "meta backend",
+  "author": "Aman Raj <archanaamanraj@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+  },
+  "license": "MIT"
+}

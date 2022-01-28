@@ -1,0 +1,27 @@
+{
+  "name": "meta-backend",
+  "version": "1.0.0",
+  "description": "meta backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "agora-access-token": "^2.0.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "mongodb": "^4.3.1",
+    "nanoid": "^3.2.0"
+  },
+  "author": {
+    "name": "Aman Raj",
+    "email": "archanaamanraj@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AmanRaj1608/meta-backend.git"
+  }
+}
