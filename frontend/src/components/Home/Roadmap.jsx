@@ -13,7 +13,7 @@ const Roadmap = () => {
         </Typography>
 
         <div className={classes.roadmap}>
-          <img src="img/tree.svg" alt="Roadmap" className={classes.treeLogo} />
+          <img src="images/tree.svg" alt="Roadmap" className={classes.treeLogo} />
           <div className={classes.text}>
             FEB 2022
           </div>

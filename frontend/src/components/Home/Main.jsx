@@ -19,19 +19,19 @@ const Details = () => {
             </Typography>
             <br />
             <div style={{ display: 'flex', alignContent: 'center', marginBottom: 10 }}>
-              <img src="img/tick.svg" alt="tick" style={{ marginRight: 10 }} />
+              <img src="images/tick.svg" alt="tick" style={{ marginRight: 10 }} />
               <Typography variant="subtitle1" className={classes.text}>
                 Dynamic NFT based membership dapp.
               </Typography>
             </div>
             <div style={{ display: 'flex', alignContent: 'center', marginBottom: 10 }}>
-              <img src="img/tick.svg" alt="tick" style={{ marginRight: 10 }} />
+              <img src="images/tick.svg" alt="tick" style={{ marginRight: 10 }} />
               <Typography variant="subtitle1" className={classes.text}>
                 Even users can join even with anonymity.
               </Typography>
             </div>
             <div style={{ display: 'flex', alignContent: 'center', marginBottom: 10 }}>
-              <img src="img/tick.svg" alt="tick" style={{ marginRight: 10 }} />
+              <img src="images/tick.svg" alt="tick" style={{ marginRight: 10 }} />
               <Typography variant="subtitle1" className={classes.text}>
                 Earn rewards just by being part of the community.
               </Typography>

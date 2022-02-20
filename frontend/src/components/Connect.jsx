@@ -27,13 +27,10 @@ const ConnectWallet = () => {
         className={classes.walletBtn}
         onClick={window.accountId ? toggleLogoutButton : login}
       >
-        {window.accountId ?
-          <Blockies
-            className={`${classes.img} ${window.accountId ? "green" : "red"}`}
-            seed={window.accountId ? window.accountId : ""}
-          /> :
-          <img className={classes.img} src="img/wallet.svg" alt='icon' />
-        }
+        <Blockies
+          className={`${classes.img} ${window.accountId ? "green" : "red"}`}
+          seed={window.accountId ? window.accountId : ""}
+        />
         <div>{window.accountId ? window.accountId : "Connect Wallet"}</div>
       </button>
       {showLogout && (
