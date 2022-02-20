@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "meta client",
   "author": "Aman Raj <archanaamanraj@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",

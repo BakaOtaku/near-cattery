@@ -2,6 +2,89 @@ import { createTheme } from "@material-ui/core/styles";
 
 const theme = createTheme({
   overrides: {
+    formStyle: {
+      formContainer: {
+        padding: "40px 26px",
+      },
+      // input and label
+      inputContainer: {
+        width: "80%",
+        margin: "0 40px 30px 40px",
+        textAlign: 'left',
+
+        "& input, & textarea": {
+          height: "50px",
+          borderRadius: 4,
+          backgroundColor: "#fff",
+          border: "1px solid #6599dc",
+          padding: "0 15px",
+          fontSize: "16px",
+          fontWeight: "500",
+          width: "100%",
+          color: "black",
+
+          "&:active": {
+            border: "1.5px solid #6599dc",
+            outline: "none",
+          },
+          "&:focus": {
+            border: "1.5px solid #6599dc",
+            outline: "none",
+          },
+          "&:disabled": {
+            pointerEvents: "none",
+            userSelect: "none",
+            backgroundColor: "#D1D1D1",
+            position: "relative",
+
+            "&~label": {
+              color: "gray",
+            },
+          },
+        },
+
+        "& textarea": {
+          padding: "15px",
+          width: "115%",
+          minHeight: 100,
+          resize: 'vertical'
+        },
+        "& label": {
+          fontSize: 16,
+          fontWeight: "500",
+          color: "#000",
+          marginLeft: "3px",
+          marginBottom: "4px",
+          display: "block;",
+
+          "& span": {
+            color: "#515C72",
+            fontSize: "14px",
+            fontWeight: "normal",
+          },
+        },
+      },
+      label: {
+        fontSize: "14px",
+        fontWeight: "700",
+        color: "#E84142",
+        marginLeft: "3px",
+        marginBottom: "4px",
+        marginTop: 0,
+        display: "block;",
+      },
+      btnWithLoader: {
+        paddingLeft: "44px",
+        transition: "all 0.3s ease",
+      },
+      loading: {
+        position: "absolute",
+        display: "block",
+        margin: "auto",
+        left: "10px",
+        color: "#E84142",
+      },
+    },
     mui: {
       container: {
         maxWidth: "1080px",

@@ -18,12 +18,25 @@ export async function initContract() {
   // console.log(window.accountId)
 
   // Initializing our contract APIs by contract name and configuration
-  window.contract = await new Contract(window.walletConnection.account(), nearConfig.contractName, {
-    // View methods are read only. They don't modify the state, but usually return some value.
-    viewMethods: ['get_greeting'],
-    // Change methods can modify the state. But you don't receive the returned value when called.
-    changeMethods: ['nft_mint'],
-  })
+  window.nft_contract = await new Contract(window.walletConnection.account(), nearConfig.contractName, {
+    viewMethods: ['invite_left'],
+    changeMethods: ['nft_mint', 'invite_other', 'create_pool'],
+  });
+}
+
+export async function invite_left() {
+  let val = await window.nft_contract.invite_left({ 'account_id': window.accountId });
+  return val;
+}
+
+export async function nft_mint() {
+  let x = await window.nft_contract.nft_mint({ 'ipfs_hash': 'xyz' });
+  console.log(x);
+}
+
+export async function create_pool() {
+  let x = await window.nft_contract.create_pool({ 'pool_id': 'nftpoolcontract.someothernewname.testnet', 'roomsize': '1000000' });
+  console.log(x);
 }
 
 export function logout() {

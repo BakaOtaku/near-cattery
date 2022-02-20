@@ -31,7 +31,7 @@ const Navbar = () => {
           <div className={classes.rightSec}>
             <div className={classes.menuItemContainer} ref={menuItemContainerRef}>
               <NavLink exact to="/rooms" className="menuItem active">All Rooms</NavLink>
-              <NavLink exact to="/register" className="menuItem active">Register</NavLink>
+              <NavLink exact to="/invite" className="menuItem active">Invite</NavLink>
             </div>
 
             <ConnectWallet />
@@ -85,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
       display: "flex",
       flexDirection: "column",
       position: "absolute",
-      backgroundColor: "#ffdd30",
+      backgroundColor: "#FAC6A5",
       width: "100%",
       top: "70px",
       left: 0,
