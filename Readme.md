@@ -2,6 +2,17 @@
 
 Decentralized Clubhouse on Near using GAN generated Dynamic NFTs and Akash Network for streaming
 
+- [💻 Presentation Video](https://www.youtube.com/watch?v=fnpXPZ0y_Xk)
+- [📖Devpost Submission](https://devpost.com/software/cattery)
+- [⚡ Live Project](https://near-cattery.amanraj.dev)
+- [☁️ Akash Backend](https://near-cattery.amanraj.dev/)
+- [📃 Near Main NFT Contract](https://explorer.testnet.near.org/accounts/nftcontract.somenewname.testnet)
+- [📃 WSK Token Contract](https://explorer.testnet.near.org/accounts/nfterc20contract.somenewname.testnet)
+- [📃 NFT Pool Fraction Contract](https://explorer.testnet.near.org/accounts/nftnewcontract.somenewname.testnet)
+
+### Genesis Wallet Mnemonic for Testing on Near
+`duck crouch razor escape select brief prefer twist sport antique sunny property`
+
 #### Inspiration
 
 Make a decentralized clubhouse using Near X Akash and dynamically machine learning generated NFTs with Fractional NFT Membership model
