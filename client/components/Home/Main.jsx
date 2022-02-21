@@ -56,7 +56,7 @@ const Details = () => {
             <div className={classes.graphicContainer}>
               <img src="images/beluga.gif" alt="graphic" className={classes.graphic} />
               <Typography variant="h1" className={classes.graphText}>
-                Already have NFT ? Join the community! Ask friends for referal NFT
+                Already have NFT ? Join the community! Ask friends for invite NFT
               </Typography>
             </div>
           </Grid>
