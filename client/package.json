@@ -1,15 +1,30 @@
 {
   "name": "meta-frontend",
   "version": "1.0.0",
-  "description": "meta backend",
+  "description": "meta client",
   "author": "Aman Raj <archanaamanraj@gmail.com>",
-  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.1",
+    "@material-ui/icons": "^4.11.2",
+    "@netlify/plugin-nextjs": "^3.6.3",
+    "faker": "^5.5.3",
+    "hark": "^1.2.3",
+    "mongodb": "^3.6.9",
+    "mongodb-client-encryption": "^1.2.6",
+    "next": "10.2.3",
+    "next-connect": "^0.10.1",
+    "near-cli": "^3.2.0",
+    "react-blockies": "^1.4.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "simple-peer": "^9.11.0",
+    "simple-signal-client": "^3.0.0",
+    "socket.io-client": "^4.1.2"
   },
   "license": "MIT"
 }
