@@ -72,25 +72,18 @@ const Rooms = () => {
               <Button className={classes.btn} onClick={createRoom} >🌱 Create Room</Button>
             </div>
             <div className={classes.room}>
-              <h1 className={classes.roomTitle}>Hackathon discussion</h1>
+              <h1 className={classes.roomTitle}>somenewname.testnet</h1>
               <div className={classes.descText}>
-                This is a room for discussing the latest news and updates from the Hackathon discussion.
+                This is a room for discussing the latest news and updates from the somenewname.testnet.
               </div>
-              <Link href="rooms/60ec9b49bd70336e3cabb22a">
+              <Link href="rooms/6213fa01338518082fe000b2">
                 <Button className={classes.btn} >🌱 Join Room</Button>
               </Link>
             </div>
             <div className={classes.room}>
-              <h1 className={classes.roomTitle}>Fun Channel</h1>
+              <h1 className={classes.roomTitle}>modi.testnet</h1>
               <div className={classes.descText}>
-                This is a room for discussing the latest news and updates from the Fun Channel.
-              </div>
-              <Button className={classes.btn} >🌱 Join Room</Button>
-            </div>
-            <div className={classes.room}>
-              <h1 className={classes.roomTitle}>Games</h1>
-              <div className={classes.descText}>
-                This is a room for discussing the latest news and updates from the Games
+                This is a room for discussing the latest news and updates from the modi.testnet.
               </div>
               <Button className={classes.btn} >🌱 Join Room</Button>
             </div>

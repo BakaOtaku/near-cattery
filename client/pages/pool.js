@@ -24,7 +24,7 @@ const Pools = () => {
         "300000000000000"
       );
       console.log(tx);
-      // setResult('');
+      setResult('');
       setTriggerModal(true)
       setIsLoading(false);
     } catch (e) {

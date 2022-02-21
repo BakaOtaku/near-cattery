@@ -187,7 +187,7 @@ const Room = ({ roomDetails }) => {
         <Navbar />
 
         <section className={classes.boxContainer}>
-          <h1 className={classes.title}>Fun Channel</h1>
+          <h1 className={classes.title}>somenewname.testnet</h1>
           <hr className={classes.break} />
 
           {toggleSettings && (
@@ -353,11 +353,11 @@ const useStyles = makeStyles((theme) => ({
     padding: "1.25rem 1.25rem 60px",
 
     "&:nth-child(1)": {
-      background: "url('/1.jpg')",
+      background: "url('https://cattery-api.amanraj.dev/api/img/6')",
       backgroundSize: 'contain',
     },
     "&:nth-child(1)": {
-      background: "url('/2.jpg')",
+      background: "url('https://cattery-api.amanraj.dev/api/img/7')",
       backgroundSize: 'contain',
     },
   },

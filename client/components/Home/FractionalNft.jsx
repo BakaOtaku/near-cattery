@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Container, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -12,10 +13,13 @@ const FractionalNft = () => {
           Fractional NFT?
         </Typography>
         <div className={classes.text}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          It has survived not only five centuries.
+          Create a pool from the NFT you have received.
+        </div>
+        <div className={classes.text}>
+          Fractionalize your NFT by creating a pool.
+        </div>
+        <div className={classes.text}>
+          Distribute the pool tokens to your audience to let them join your room.
         </div>
 
         <div className={classes.graphicContainer}>
@@ -23,10 +27,12 @@ const FractionalNft = () => {
         </div>
 
         <div className={classes.btnCont}>
-          <button className={classes.btn} onClick={() => window.open("", "_blank")}>
-            <img src="logo.svg" alt="logo" className={classes.logo} />
-            Create Pool
-          </button>
+          <Link href="/pool">
+            <button className={classes.btn}>
+              <img src="logo.svg" alt="logo" className={classes.logo} />
+              Create Pool
+            </button>
+          </Link>
         </div>
       </Container>
     </section>

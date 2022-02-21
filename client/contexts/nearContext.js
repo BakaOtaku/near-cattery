@@ -33,6 +33,25 @@ export default function Near({ children }) {
     window.walletConnection.requestSignIn(nearConfig.contractName)
   }
 
+  async function fetch_pool_balance(owner, balanceRequester) {
+    let nft_pool_master_contract = await near.loadContract('nftpoolcontract.somenewname.testnet', {
+      viewMethods: ['get_pool_details'],
+      changeMethods: [],
+      sender: balanceRequester
+    })
+
+    let x = await nft_pool_master_contract.get_pool_details({ 'for_account': owner });
+    console.log('pool ' + x);
+    let pool_contract = await near.loadContract(x, {
+      viewMethods: ['ft_balance_of'],
+      changeMethods: ['',],
+      sender: balanceRequester
+    });
+    let balance = await pool_contract.ft_balance_of({ 'account_id': balanceRequester });
+    console.log(balance);
+    return { 'pool_id': x, 'balance': balance };
+  }
+
   const logout = () => {
     window.walletConnection.signOut()
     window.location.replace(window.location.origin + window.location.pathname)
