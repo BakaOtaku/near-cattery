@@ -1,0 +1,36 @@
+---
+version: "2.0"
+
+services:
+  web:
+    image: fuzious/cattery-img
+    expose:
+      - port: 3000
+        as: 80
+        to:
+          - global: true
+
+profiles:
+  compute:
+    web:
+      resources:
+        cpu:
+          units: 1
+        memory:
+          size: 2Gi
+        storage:
+          size: 2Gi
+  placement:
+    westcoast:
+      attributes:
+        host: akash
+      pricing:
+        web: 
+          denom: uakt
+          amount: 1000
+
+deployment:
+  web:
+    westcoast:
+      profile: web
+      count: 1

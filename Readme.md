@@ -1,6 +1,15 @@
-<h5 align="center">Meta</h5>
+<h5 align="center">Cattery</h5>
 
-hehe
+
+# Machine Learning Model
+
+
+
+# NFT Fractionalization
+
+Create a pool from the NFT you have received. 
+Fractionalize your NFT by creating a pool.
+Distribute the pool tokens to your audience to let them join your room.
 
 ### How to set up?
 
