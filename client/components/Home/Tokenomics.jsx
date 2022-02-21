@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Container, Typography, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -23,12 +24,14 @@ const Tokenomics = () => {
               Earning rewards while being a member of the ecosystem.
             </div>
 
-            {/* <div className={classes.btnCont}>
-              <button className={classes.btn} onClick={() => window.open("", "_blank")}>
-                <img src="logo.svg" alt="logo" className={classes.logo} />
-                Invite
-              </button>
-            </div> */}
+            <div className={classes.btnCont}>
+              <Link href="/invite">
+                <button className={classes.btn}>
+                  <img src="logo.svg" alt="logo" className={classes.logo} />
+                  Invite
+                </button>
+              </Link>
+            </div>
           </Grid>
 
           <Grid item xs={12} sm={7}>

@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from 'next/link';
 import { Container, Typography, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -38,16 +38,20 @@ const Details = () => {
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               <div className={classes.btnCont}>
-                <button className={classes.btn} onClick={() => window.open("", "_blank")}>
-                  <img src="logo.svg" alt="logo" className={classes.logo} />
-                  Invite
-                </button>
+                <Link href="/invite">
+                  <button className={classes.btn}>
+                    <img src="logo.svg" alt="logo" className={classes.logo} />
+                    Invite
+                  </button>
+                </Link>
               </div>
               <div className={classes.btnCont}>
-                <button className={classes.btn} onClick={() => window.open("", "_blank")}>
-                  <img src="logo.svg" alt="logo" className={classes.logo} />
-                  All Rooms
-                </button>
+                <Link href="/rooms">
+                  <button className={classes.btn}>
+                    <img src="logo.svg" alt="logo" className={classes.logo} />
+                    All Rooms
+                  </button>
+                </Link>
               </div>
             </div>
           </Grid>
